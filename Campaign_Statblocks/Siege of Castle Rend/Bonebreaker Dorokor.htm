@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"/><title>Sir Pelliton</title><link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><link href="//fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><style>
+<html><head><meta charset="utf-8"/><title>Bonebreaker Dorokor</title><link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><link href="//fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><style>
     body {
       margin: 0;
     }
@@ -279,150 +279,120 @@ function elementClass(contentNode) {
   createCustomElement('property-block', templateElement.content);
 }</script><stat-block>
     <creature-heading>
-      <h1>Sir Pelliton</h1>
-      <h2>Medium humanoid (human), chaotic evil</h2>
+      <h1>Bonebreaker Dorokor</h1>
+      <h2>Medium humanoid (orc), neutral evil</h2>
     </creature-heading>
 
     <top-stats>
       <property-line>
         <h4>Armor Class</h4>
-        <p>20 (plate, shield)</p>
+        <p>19 (half plate of fire resistance, shield)</p>
       </property-line>
       <property-line>
         <h4>Hit Points</h4>
-        <p>76 (9d10 + 27)</p>
+        <p>102 (12d8 + 48)</p>
       </property-line>
       <property-line>
         <h4>Speed</h4>
         <p>30ft.</p>
       </property-line>
 
-      <abilities-block data-cha="18" data-con="17" data-dex="8" data-int="13" data-str="18" data-wis="15"></abilities-block>
+      <abilities-block data-cha="17" data-con="18" data-dex="15" data-int="12" data-str="19" data-wis="17"></abilities-block>
 
       <property-line>
         <h4>Saving Throws</h4>
-        <p>Dex + 3, Int +5</p>
+        <p>Str +7, Dex +5, Wis +6</p>
       </property-line>
 	  <property-line>
         <h4>Skills</h4>
-        <p>Animal Handling +6, Arcana +5, Intimidation +8</p>
+        <p>Athletics +7, Intimidation +6, Persuasion +6</p>
       </property-line>
 	  <property-line>
         <h4>Damage Resistances</h4>
-        <p>cold, fire, lightning, psychic</p>
-      </property-line>
-	  <property-line>
-        <h4>Condition Immunities</h4>
-        <p>blinded, deafened</p>
+        <p>fire</p>
       </property-line>
 	  <property-line>
         <h4>Senses</h4>
-        <p>passive Perception 12</p>
+        <p>darkvision 60 ft., passive Perception 13</p>
       </property-line>
       <property-line>
         <h4>Languages</h4>
-        <p>Common</p>
+        <p>Common, Orc</p>
       </property-line>
       <property-line>
         <h4>Challenge</h4>
-        <p>5 (1800 XP)</p>
+        <p>6 (2300 XP)</p>
       </property-line>
     </top-stats>
 	
 	<property-block>
-      <h4>Mounted Combatant.</h4>
-      <p>While mounted, Sir Pelliton has advantage on melee attack rolls 
-		against unmounted creatures that are smaller than his mount.</p>
-    </property-block>
-	
-	<property-block>
-      <h4>The Star Knight.</h4>
-      <p>Sir Pelliton has resistance to cold, fire, lightning, and psychic damage
-		as a sign of his pact, and cannot be blinded or deafened. His hellish rebuke
-		does 20 damage (no roll) to enemies who fail their save.</p>
+      <h4>Wielder of Wound.</h4>
+      <p>Bonebreaker Dorokor wields the magical greataxe <i>Wound</i>.</p>
     </property-block>
 
     <h3>Actions</h3>
 
     <property-block>
       <h4>Multiattack.</h4>
-      <p>Sir Pellition makes three melee attacks or makes two melee attacks and casts eldritch blast.</p>
+      <p>Bonebreaker Dorokor makes three weapon attacks, or she makes two weapon attacks and issues a War Cry if it is
+		available.</p>
     </property-block>
 
     <property-block>
-      <h4>Frost Brand Longsword.</h4>
-      <p><i>Melee Weapon Attack:</i> +8 to hit, reach 5 ft., one target.
-        <i>Hit:</i> 8 (1d8 + 4) alashing damage plus 3 (1d6) cold damage.</p>
+      <h4>Wound.</h4>
+      <p><i>Melee Weapon Attack:</i> +8 to hit, reach 5 ft., one target. <i>Hit:</i> 11 (1d12 + 5) slashing damage plus 7
+		(2d6) necrotic damage. The target’s maximum hit points are decreased in equal amount to the necrotic damage dealt.
+		The target’s hit point maximum does not return to normal until it finishes a long rest or its grievous wounds are 
+		soothed by a greater restoration spell.</p>
     </property-block>
 	
 	<property-block>
-      <h4>Lance.</h4>
-      <p><i>Melee Weapon Attack:</i> +8 to hit, reach 10 ft., one target.
-        <i>Hit:</i> 10 (1d12 + 4) piercing damage.</p>
+      <h4>Longbow.</h4>
+      <p><i>Ranged Weapon Attack:</i> +5 to hit, range 150/600 ft., one target. <i>Hit:</i> 6 (1d8 + 2) piercing damage.</p>
     </property-block>
 	
 	<property-block>
-      <h4>Eldritch Blast (3 beams).</h4>
-      <p><i>Ranged Spell Attack:</i> +8 to hit, range 120 ft., up to three targets.
-        <i>Hit:</i> 5 (1d10) force damage per beam.</p>
+      <h4>War Cry (Recharge 4-6).</h4>
+      <p>Dorokor screams an orcish war phrase, spurring her warriors on toward victory. Choose one of the following effects: 
+		<br/><b>Rally:</b> <i>All of Dorokor’s minions within 30 feet that can hear her gain 22 (4d10) temporary hit points.
+		</i><br/><b>Focus:</b> <i>All of Dorokor’s minions within 30 feet that can hear her will have advantage on the next
+		attack roll they make before the end of their next turn.</i><br/><b>Charge:</b> <i>All of Dorokor’s minions within 30
+		feet that can hear her can move up to their speed as a reaction.</i></p>
     </property-block>
 	
 	<h3>Bonus Actions</h3>
 	
 	<property-block>
-      <h4>Branding Smite - Recharge 6.</h4>
-      <p>The next time Sir Pelliton hits a creature with a weapon attack this round,
-		the weapon gleams with unholy radiance as he strikes. The attack deals an
-		extra 6 (2d6) radiant damage on the target, which becomes visible if it's
-		invisible, and the target sheds dim light in a 5-foot radius and can't become
-		invisible until the beginning of Sir Pelliton's next turn.</p>
+      <h4>Aggressive</h4>
+      <p>As a bonus action, Bonebreaker Dorokor can move up to her speed toward a hostile creature she can see.</p>
     </property-block>
 	
 	<h3>Reactions</h3>
 	
 	<property-block>
-      <h4>Pick up the Slack!.</h4>
-      <p>As a reaction, when a minion dies, issue a command to your other 
-		minions. Those who can hear you gain a reaction they can use to 
-		immediately take another movement.</p>
+      <h4>Villain Ability: Warlord.</h4>
+      <p>As a reaction, when a minion dies, issue a command to your other minions. Those who can hear you gain a reaction 
+		they can use to immediately take another movement.</p>
     </property-block>
-	
-	<property-block>
-      <h4>Hellish Rebuke.</h4>
-      <p>As a reaction, when Sir Pelliton takes damage, he points at the
-		creature who damaged him and they are surrounded by hellish flames.
-		The creature must make a DC16 Dexterity saving throw, taking 20 fire
-		damage on a failed save, or 10 on a successful one.</p>
-    </property-block>
-	
-	<property-block>
-      <h4>Counterspell - Recharge 5,6.</h4>
-      <p>As a reaction, when Sir Pelliton sees a creature within 60 feet cast a spell,
-		he attempts to interrupt the casting. If the spell is 3rd level or lower, it
-		fails and has no effect. If the spell is 4th level or higher, make a Charisma
-		ability check. The DC is equal to 10 + the spell's level. On a success, the 
-		creature's spell fails and has no effect.</p>
-    </property-block>
-	
+
 	<h3>Villian Actions</h3>
 	
 	<property-block>
-      <h4>Round 1 - Kneel.</h4>
-      <p>Sir Pelliton casts Black Tentacles with the following changes: The duration
-		is 24 hours, until the effect is dispelled, or until Sir Pelliton dismisses 
-		it as a bonus action. This effect does not require concentration.</p>
+      <h4>Round 1 - Final Warning.</h4>
+      <p>Bonebreaker Dorokor gives a mighty yell. All enemies who can hear her must make a DC 16 Charisma saving throw or
+		be frightened until the end of her next turn.</p>
     </property-block>
 	
 	<property-block>
-      <h4>Round 2 - Get in Formation!.</h4>
-      <p>Sir Pelliton commands his remaining minions to get in formation. All minions
-		who can hear him can move up to their speed towards an enemy of their choice
-		(default is nearest enemy).</p>
+      <h4>Round 2 - You Have Chosen Death.</h4>
+      <p>All minions who can see Bonebreaker Dorokor may immediately perform one melee attack. War Cry immediately
+		recharges.</p>
     </property-block>
 	
 	<property-block>
-      <h4>Round 3 - Cone of Cold.</h4>
-      <p>Sir Pelliton casts the Cone of Cold spell.</p>
+      <h4>Round 3 - Fanatic of Grole.</h4>
+      <p>Bonebreaker Dorokor enters a wild frenzy, moving up to her speed and attacking twice with <i>Wound</i>. Reroll
+		1s on damage dice from these attacks.</p>
     </property-block>
 	
   </stat-block></body></html>
